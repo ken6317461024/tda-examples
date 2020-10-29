@@ -9,7 +9,7 @@ This repository is a collection of python programs written from early 2020 to pr
 - __Complete__ contains "complete" programs. These should be stable and serve a well-defined purpose.
 - __Old__ contains programs which appear, to the best of my ability, to be deprecated, including a combination of outdated tests and less efficient implementations of homology, vietoris rips, and persistence algorithms.
 
-## Going forward: 
+## Going forward 
 
 If this repository is used going forward, the "complete" programs should be cleaned up significantly. Functions should be allocated to separate python files and called in the main program. This will include the auxilliary programs, but it will also involve creating new python files, which in a sense "partition" some current ones. Doing this will make it much easier to track progress, understand dependencies, and simply read the code.  
 
