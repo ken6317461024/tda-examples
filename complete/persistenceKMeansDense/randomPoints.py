@@ -14,13 +14,13 @@ def randomCoordinates(num, dim, lower, upper, decimals):
             
     return coordinates
 
-def removeRectangle(coordinates, size, lower, upper):
+def removeRectangle(coordinates, size, lower1, upper1, lower2, upper2):
 
     count = 0
     j = 0 
     
     while count < size:
-        if lower < coordinates[j][0] < upper and lower < coordinates[j][1] < upper:
+        if lower1 < coordinates[j][0] < upper1 and lower2 < coordinates[j][1] < upper2:
             coordinates.remove(coordinates[j])
             count += 1
         else:
@@ -28,5 +28,4 @@ def removeRectangle(coordinates, size, lower, upper):
             count += 1
                    
     return coordinates
-
 

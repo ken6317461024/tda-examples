@@ -1,0 +1,24 @@
+#!/bin/bash
+
+rm boundary && touch boundary || touch boundary
+
+echo "b1 = {" >> boundary
+
+ELINES=$( wc -l < edges )
+
+for (( i=1; i<=$ELINES; i++ )); do
+
+	EDGE=$( sed -n "$i"p edges )
+	awk "/${EDGE%% *}/ && /${EDGE##* }/" faces > tmp
+	FLINES=$( wc -l < tmp )
+
+	for (( j=1; j<=$FLINES; j++ )); do
+		echo "	'$EDGE': '$( sed -n "$j"p < tmp )'," >> boundary
+	done
+
+	rm tmp
+
+done
+
+echo "}" >> boundary
+
