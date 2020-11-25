@@ -4,7 +4,6 @@ This repository is a collection of python programs written from early 2020 to pr
 
 ## Structure 
 
-- __Old__ contains programs which appear, to the best of my ability, to be deprecated, including a combination of outdated tests and less efficient implementations of homology, vietoris rips, and persistence algorithms.
 - __Tests__ contains programs which were used to run tests. In the future, tests will be run in a more "git" way, i.e. with branches. Therefore, tests is a relic of the pre-git life. 
 - __Auxilliary__ contains programs that are not directly related to TDA but are used in an integral way nonetheless. For instance, linear algebra functions that are used in homology computations. A future implementation of these TDA programs can be cleaned up significantly by importing these programs and calling the functions from them.
 - __Complete__ contains "complete" programs. These should be stable and serve a well-defined purpose.
