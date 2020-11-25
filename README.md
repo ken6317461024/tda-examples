@@ -4,9 +4,9 @@ This repository is a collection of python programs written from early 2020 to pr
 
 ## Structure 
 
-- __Tests__ contains programs which were used to run tests. In the future, tests will be run in a more "git" way, i.e. with branches. Therefore, tests is a relic of the pre-git life. 
-- __Auxilliary__ contains programs that are not directly related to TDA but are used in an integral way nonetheless. For instance, linear algebra functions that are used in homology computations. A future implementation of these TDA programs can be cleaned up significantly by importing these programs and calling the functions from them.
 - __Complete__ contains "complete" programs. These should be stable and serve a well-defined purpose.
+- __Auxilliary__ contains programs that are not directly related to TDA but are used in an integral way nonetheless. For instance, linear algebra functions that are used in homology computations. A future implementation of these TDA programs can be cleaned up significantly by importing these programs and calling the functions from them.
+- __Tests__ contains programs which were used to run tests. In the future, tests will be run in a more "git" way, i.e. with branches. Therefore, tests is a relic of the pre-git life. 
 
 ## Going forward 
 
